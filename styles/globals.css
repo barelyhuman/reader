@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -23,28 +25,25 @@
   --muted: var(--zinc-500);
 }
 
-
 html {
   font-size: 100%;
   background: var(--base);
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 
   /* disable scrollbar in firefox */
   overflow-y: scroll;
   scrollbar-width: none;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* disable scrollbar in chrome */
 ::-webkit-scrollbar {
   display: none;
 }
-
 
 body {
   color: var(--text);
@@ -109,7 +108,7 @@ main > article > * {
 }
 
 a {
-  display: inline-block;
+  height: fit-content;
   color: var(--muted);
   text-decoration: none;
   position: relative;
@@ -143,4 +142,3 @@ img {
 .article {
   padding: 1rem 0;
 }
-
